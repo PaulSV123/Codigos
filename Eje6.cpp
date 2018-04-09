@@ -13,7 +13,7 @@ void cadena1(char *x,char *y) //Se crean 2 cadenas
 }
 void cadena2(char x[],char y[]) //Se crean 2 cadenas
 {
-    int a=0,b=0; //Se crean 2 comtandores
+    int a=0,b=0; //Se crean 2 contandores
     while(x[a]!='\0') // x[a] si es diferente del vacio
     {
         a++; //a aumenta en 1
