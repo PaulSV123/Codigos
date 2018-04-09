@@ -53,20 +53,20 @@ int main(){
         }
 
     multiplicarM(A,B,C,k,m,n);
-	cout<<"----------------------------------"<<endl;
+    cout<<"----------------------------------"<<endl;
     cout<<"Matriz A: "<<endl;
     imprimir(A,k,m);
     cout<<"----------------------------------"<<endl;
     cout<<"Matriz B: "<<endl;
     imprimir(B,m,n);
-	cout<<"----------------------------------"<<endl;
-	cout<<"Antes de multiplicar"<<endl;
-	cout<<"M [A]"<<endl;
-	imprimir(A,k,m);
-	cout<<"----------------------------------"<<endl;
-	cout<<"M [B]"<<endl;
-	imprimir(B,m,n);
-	cout<<"----------------------------------"<<endl;
+    cout<<"----------------------------------"<<endl;
+    cout<<"Antes de multiplicar"<<endl;
+    cout<<"M [A]"<<endl;
+    imprimir(A,k,m);
+    cout<<"----------------------------------"<<endl;
+    cout<<"M [B]"<<endl;
+    imprimir(B,m,n);
+    cout<<"----------------------------------"<<endl;
     cout<<"Resultado de ambas matrices despues de multiplicar"<<endl;
     imprimir(C,k,n);
 
