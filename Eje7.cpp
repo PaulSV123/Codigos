@@ -1,24 +1,24 @@
 #include <iostream>
 using namespace std;
 
-void concatena1(char *x,char *y)
+void concatena1(char *x,char *y) //Se crean dos cadenas
 {
-    while(*x)
+    while(*x) //x recorre todo el arreglo hasta el ultimo elemento
     {
-	x++;
+	x++; //x aumenta en 1
     }
-    while(*y)
+    while(*y) //y recorre todo el arreglo hasta el ultimo elemento
     {
-        *x=*y;
-	x++;
-	y++;
+        *x=*y; //x copiara el contenido de y
+	x++; //x aumenta en 1
+	y++; //y aumenta en 1
     }
-    *x='\0';
+    *x='\0'; //x es igual al vacio
 
 }
-void concatena2(char a[], char b[])
+void concatena2(char a[], char b[]) // Se crean 2 cadenas
 {
-    int x=0, y=0;
+    int x=0, y=0; //Creamos dos 
     while(a[x])
     {
        x++;
