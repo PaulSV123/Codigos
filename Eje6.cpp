@@ -3,7 +3,7 @@ using namespace std;
 
 void cadena1(char *x,char *y)
 {
-    iwhile(*t)
+    while(*t)
     {
 	    *s=*t;
 	    t++;
@@ -30,7 +30,7 @@ void cadena2(char x[],char y[])
 }
 int main()
 {
-	char *tpr=new char[10];
+    char *tpr=new char[10];
     tpr="bebidas";
     char str[]="gratis";
     char trps[]="pan";
