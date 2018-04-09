@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void concatena1(char *s,char *t)
+void concatena1(char *x,char *y)
 {
-    int a=0,b=0;
-    while(*(s+a)!='\0')
+    while(*x)
     {
-        a++;
+	    x++;
     }
-    while(*(t+b)!='\0')
+    while(*y)
     {
-        b++;
+        *x=*y;
+	    x++;
+	    y++;
     }
-    for(int i=0;i<a+b;i++)
-        *(s+b+i)=*(t+i) ;
+    *x='/0';
 
 }
 void concatena2(char a[], char b[])
