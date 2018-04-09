@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void cadena1(char *x,char *y)
+void cadena1(char *x,char *y) 
 {
     while(*x)
     {
