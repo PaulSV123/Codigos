@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-char palindromo(char *x)
+char palindromo(char *x) //Creamos una cadena
 {
-    int a=0,b=0;
+    int a=0,b=0; 
     while(*(x+a)!='\0')
     {
         a++;
