@@ -18,18 +18,18 @@ void concatena1(char *x,char *y) //Se crean dos cadenas
 }
 void concatena2(char a[], char b[]) // Se crean 2 cadenas
 {
-    int x=0, y=0; //Creamos dos 
-    while(a[x])
+    int x=0, y=0; //Creamos dos contadores
+    while(a[x]) //a[x] recorrera el arreglo
     {
-       x++;
+       x++; //x aumenta en 1
     }
-    while(b[y])
+    while(b[y]) //b[y] recorrera el arreglo
     {
-       a[x]=b[y];
-       x++;
-       y++;
+       a[x]=b[y]; //a[x] copiara el contenido de b[y]
+       x++; //x aumenta en 1
+       y++; //y aumenta en 1
     }
-    a[x]='\0';
+    a[x]='\0'; //a[x] es igual al vacio
 }
 int main()
 {
