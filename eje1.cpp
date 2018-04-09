@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void producto1(int x,int y,int &multi)
+void producto1(int x,int y,int &multi) //Inicializacion del paso por referencia
 {
     multi=x*y;
 }
-void producto2(int x,int y, int multi)
+void producto2(int x,int y, int multi) //Inicializacion del paso por valor
 {
     multi=x*y;
 }
