@@ -13,10 +13,10 @@ int recursiva (int *V,int length) //Iniciamos con la funcion de un puntero y el 
 }
 int iterativa (int *S,int tam) //Iniciamos con la funcion de un puntero y el tamaño de igual modo
 {
-    int cont=0; //cont se iguala a la posicion 0 de S.
-    for(int i=0;i<tam;i++)
+    int cont=0; //cont es un contador comenzando desde 0
+    for(int i=0;i<tam;i++) //Si i es menor a tam(tamaño) aumenta
     {
-        cont=cont+S[i]; //aumenta el valor de cont 
+        cont=cont+S[i]; //cont estaria contabilizando la posicion de i  
     }
     return cont;
 }
