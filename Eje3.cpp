@@ -3,30 +3,30 @@ using namespace std;
 
 void Merge(int *a, int low, int high, int mid)
 {
-	int i, j, k, temp[high-low+1];
-	i = low, k = 0, j = mid + 1;
-	while (i <= mid && j <= high)
-	{
-		if (a[i] < a[j])
+	int i, j, k, temp[high-low+1]; //Creando un array temp donde high es el final y low es el comienzo aumentado en 1
+	i = low, k = 0, j = mid + 1; //mid es el medio que seria low + high /2 aumentando en 1
+	while (i <= mid && j <= high) // i=comienzo , j es igual al medio 
+	{	                       //Si i es menor igual al medio y j es menor igual a high
+		if (a[i] < a[j])       //Entonces si a[i] es menor a a[j]
 		{
-			temp[k] = a[i];
-			k++;
+			temp[k] = a[i]; // Entonces el temp[k] copiara a[i] donde este obtendra un valor y aumentara
+			k++;             //Cuando a[i] no sea menor a a[j] este pasara al else 
 			i++;
 		}
 		else
 		{
-			temp[k] = a[j];
-			k++;
+			temp[k] = a[j]; //El valor de temp[K] se copiara a a[j]
+			k++;            //Y aumentara k y j
 			j++;
 		}
 	}
-	while (i <= mid)
+	while (i <= mid) //Si i es menor o igual a mid(medio)
 	{
 		temp[k] = a[i];
 		k++;
 		i++;
 	}
-	while (j <= high)
+	while (j <= high) //Si j es menor o igual a high.
 	{
 		temp[k] = a[j];
 		k++;
