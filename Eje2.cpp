@@ -21,22 +21,22 @@ int iterativa (int *S,int tam) //Iniciamos con la funcion de un puntero y el tam
     }
     return cont;
 }
-int tamaint(int *x)
+int tamaint(int *x) //x es un puntero de enteros
 {
     int var=0;
-    while (*x!='\0')
+    while (*x!='\0') //el puntero de x es diferente del vacio
     {
-        var++;
-        x++;
+        var++;  //aumenta var en 1
+        x++;    //aumenta x en 1
     }
     return var;
 }
 int main()
 {
-	int arr[]={1,7,8,2,'\0'};
+    int arr[]={1,7,8,2,'\0'};
     int *ptr=arr;
     int arra[]={1,4,5,2,'\0'};
     int *prt=arra;
-	cout<<recursiva(arra,tamaint(ptr))<<" recursiva ";
+    cout<<recursiva(arra,tamaint(ptr))<<" recursiva ";
     cout<<iterativa(arr,tamaint(ptr))<<" iterativa ";
 }
