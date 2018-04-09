@@ -3,17 +3,17 @@ using namespace std;
 
 void cambio(char z[],int x,int y)
 {
-    char cam=z[x];
-    z[x]=z[y];
-    z[y]=cam;
+    char cam=z[x]; //el contenido de z[x] se guardara en cam
+    z[x]=z[y]; //z[x] copiara el contenido de z[y]
+    z[y]=cam; //z[y] copiara el contenido de cam
 }
 void cambio2(char *z,int y,int x)
 {
-    char ptr[2]={z[y],z[x]};
-    char *puntero=ptr;
-    z[x]=*puntero;
-    puntero++;
-    z[y]=*puntero;
+    char ptr[2]={z[y],z[x]}; //el tamaño del arreglo ptr es 2
+    char *puntero=ptr; //el puntero char se iguala a ptr
+    z[x]=*puntero; //z[x] copiara el contenido del puntero
+    puntero++; //puntero aumentara en 1
+    z[y]=*puntero; //z[y] copiara el contenido del puntero
 }
 
 int main()
