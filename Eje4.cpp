@@ -11,14 +11,14 @@ void multiplicarM(int A[][20],int B[][20], int C[][20], int k, int m ,int n){
     for(int i=0; i<k; ++i)
         for(int j=0; j<n; ++j)
             for(int z=0; z<m; ++z)
-                C[i][j] += A[i][z] * B[z][j]; // 
+                C[i][j] += A[i][z] * B[z][j]; // La matriz recibe la multiplicaion de la M[a] Y M[b]
 }
 void imprimir(int arr[][20],int x,int y){
     for(int i=0; i<x; ++i)
     {
         for(int j=0; j<y; ++j)
         {
-            cout<<arr[i][j]<<" ";
+            cout<<arr[i][j]<<" "; //Imprime la posicion de las filas y columnas
         }
         cout<<endl;
     }
