@@ -5,13 +5,13 @@ void concatena1(char *x,char *y)
 {
     while(*x)
     {
-	    x++;
+	x++;
     }
     while(*y)
     {
         *x=*y;
-	    x++;
-	    y++;
+	x++;
+	y++;
     }
     *x='/0';
 
