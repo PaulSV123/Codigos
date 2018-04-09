@@ -13,7 +13,7 @@ void concatena1(char *x,char *y)
 	x++;
 	y++;
     }
-    *x='/0';
+    *x='\0';
 
 }
 void concatena2(char a[], char b[])
