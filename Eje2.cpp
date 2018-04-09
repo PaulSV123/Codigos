@@ -5,7 +5,7 @@ int recursiva (int *V,int length) //Iniciamos con la funcion de un puntero y el 
 {
     if (length==1) //Si el tamaño es 1 nos retornara a la posicion 0.
     {
-        return V[0];
+        return V[0]; //retorna a la posicion 0 de V
     }
     else
         length--; //Si no es asi el tamaño se reducira y retornara el tamaño mas la funcion recursiva.
