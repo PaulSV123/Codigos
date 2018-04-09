@@ -3,25 +3,13 @@ using namespace std;
 
 void cadena1(char *x,char *y)
 {
-    int a=0,b=0;
-    while(*(x+a)!='\0')
+    iwhile(*t)
     {
-        a++;
+	    *s=*t;
+	    t++;
+	    s++;
     }
-    while(*(y+b)!='\0')
-    {
-        b++;
-    }
-    for (int i=0;i<b;i++)
-    {
-        *(y+i)=' ';
-    }
-    for (int i=0;i<a;i++)
-        if (*(x+i)!='\0')
-            { *(y+i)=*(x+i);}
-
-
-
+    *s='/0';
 }
 void cadena2(char x[],char y[])
 {
