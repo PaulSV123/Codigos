@@ -18,7 +18,7 @@ void concatena1(char *s,char *t)
 }
 void concatena2(char a[], char b[])
 {
-	int x=0, y=0;
+    int x=0, y=0;
     while(a[x])
     {
        x++;
