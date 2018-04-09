@@ -9,7 +9,7 @@ void cadena1(char *x,char *y)
 	    x++;
 	    y++;
     }
-    *y='/0';
+    *y='\0';
 }
 void cadena2(char x[],char y[])
 {
