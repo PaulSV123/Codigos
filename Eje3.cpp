@@ -16,25 +16,25 @@ void Merge(int *a, int low, int high, int mid)
 		else
 		{
 			temp[k] = a[j]; //El valor de temp[K] se copiara a a[j]
-			k++;            //Y aumentara k y j
+			k++;            //Aumentara k y j
 			j++;
 		}
 	}
 	while (i <= mid) //Si i es menor o igual a mid(medio)
 	{
-		temp[k] = a[i];
-		k++;
+		temp[k] = a[i]; //el valor de temp[k] se copiara a[i]
+		k++; //Aumentara k y i
 		i++;
 	}
 	while (j <= high) //Si j es menor o igual a high.
 	{
-		temp[k] = a[j];
-		k++;
-		j++;
+		temp[k] = a[j]; //El valor de temp[k] copiara el valor de a[j]
+		k++;            //Aumentara k y j 
+		j++;            //Hasta que este no sea menor al final
 	}
-	for (i = low; i <= high; i++)
-	{
-		a[i] = temp[i-low];
+	for (i = low; i <= high; i++) 
+	{    
+		a[i] = temp[i-low];    // Se asigna el valora[i] con cada parte de temp[i-low]
 	}
 }
 void MergeSort(int *a, int low, int high)
