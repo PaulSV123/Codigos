@@ -39,20 +39,20 @@ void Merge(int *a, int low, int high, int mid)
 }
 void MergeSort(int *a, int low, int high)
 {
-	int mid;
-	if (low < high)
+	int mid; //Creamos una variable mid(medio)
+	if (low < high) //El inicio debe ser menor al final
 	{
-		mid=(low+high)/2;
-		MergeSort(a, low, mid);
-		MergeSort(a, mid+1, high);
-		Merge(a, low, high, mid);
+		mid=(low+high)/2;              //El valor del medio es el inicio + el final entre 2
+		MergeSort(a, low, mid);	   	//Hace un llamado a la funcion 
+		MergeSort(a, mid+1, high);	//Hace un llamado otra vez a funcion a la funcion con la diferencia que este aumenta la derecha
+		Merge(a, low, high, mid);	//Cambia los valores
 	}
 }
 
 void insertion_sort (int arr[], int length){
-    int j, temp;
+    int j, temp; //Se crea en 2 variables
 
-	for (int i = 0; i < length; i++){
+	for (int i = 0; i < length; i++){  //Se crea una i con valor 0 para que aumente en 1
 		j = i;
 
 		while (j > 0 && arr[j] < arr[j-1]){
